@@ -12,7 +12,7 @@ void input(student* s , int n){
     for(int i=0;i<n;i++){
         scanf(" %[^\n]",s[i].name);
         scanf("%d",&s[i].roll);
-        scanf("%f",s[i].marks);
+        scanf("%f",&s[i].marks);
     }
 }
 
@@ -20,8 +20,8 @@ void display(student *s , int n){
     for(int i=0;i<n;i++){
 
         printf("%[^\n]",s[i].name);
-        printf("%d",s[i].roll);
-        printf("%d",s[i].marks);
+        printf("%d\n",s[i].roll);
+        printf("%f\n",s[i].marks);
     }
 }
 
