@@ -46,3 +46,19 @@ int main(){
 
     return 0;
 }
+
+
+/*
+
+void selectionsort(int* arr , int n , int start){
+
+if(start>=n-1){
+return;
+}
+
+int * smallest  = arr+start;
+
+for(int *p= arr+start+1;p<arr+n;p++){
+}
+}
+*/

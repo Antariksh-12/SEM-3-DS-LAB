@@ -1,20 +1,12 @@
 #include <stdio.h>
 
-int* find(int *arr , int n){
-    // int smallest = *arr;
+int smallest(int* arr , int n){
 
-    // for(int i=0;i<n;i++){
-    //     if(*(arr+i)<smallest){
-    //         smallest = *(arr+i);
-    //     }
-    // }
-    // return smallest;
+    int smallest = *arr;
 
-    int* smallest = arr;
-
-    for(int i=1;i<n;i++){
-        if(*(arr+i)<*smallest){
-            smallest = arr+i;
+    for(int i=0;i<n;i++){
+        if(*(arr+i)<smallest){
+            smallest=*(arr+i);
         }
     }
     return smallest;
@@ -23,26 +15,17 @@ int* find(int *arr , int n){
 int main(){
 
     int n;
-    printf("Enter the number of elements :");
+    printf("Enter the value of n :");
     scanf("%d",&n);
 
     int arr[n];
-
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
 
-    
-    int* res = find(arr , n);
+    int res = smallest(arr,n);
 
-    printf("The smallest element in the array is %d\n",*res);
-
+    printf("%d\n",res);
     return 0;
+
 }
-
-
-
-
-
-
-
